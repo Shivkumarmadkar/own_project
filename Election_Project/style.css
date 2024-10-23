@@ -1,0 +1,479 @@
+/* :root {
+    --primary-color: #1dccd5;
+    --secondary-color: #ffffff;
+    --tertury-color: #50afe6;
+} */
+:root {
+    --primary-color: #1dccd5;
+    --secondary-color: #ffffff;
+    --tertury-color: #50afe6;
+    --gradient-primary: linear-gradient(to right, #0575E6, #00F260); /* Correct gradient definition */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: var(--gradient-primary); 
+}
+
+.header h6 {
+   
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--gradient-primary);
+}
+
+/* 
+.form-control {
+  
+} */
+.form-section {
+    background: linear-gradient(135deg, #f7f7f7, #ddd7d7); /* Adjust colors as needed */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 345px;
+}
+
+.form-label {
+    color: #798691;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.pagination .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.pagination .active {
+    background: var(--gradient-primary); 
+}
+
+/* .carousel-item img {
+    width: 100%;
+    height: auto; 
+    max-height: 300px;
+    object-fit: contain; 
+} */
+
+
+.carousel-indicators [data-bs-target] {
+    /* width: 12px; */
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+#info_description {
+    white-space: pre; /* Preserve formatting */
+    width: 100%; /* Adjust width as necessary */
+    height: 200px; /* Adjust height as necessary */
+    font-family: monospace; /* Use a monospace font for better alignment */
+    padding: 5px; /* Add some padding for better readability */
+    box-sizing: border-box; /* Include padding in width/height calculation */
+}
+
+
+@media (max-width: 600px) {
+    .carousel-inner img {
+        height: 250px; 
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-inner img {
+        height: 350px; 
+        object-fit: contain;
+    }
+}
+
+.profile-card {
+    gap: 20px;
+    border: none;
+    /* padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.profile-image {
+    width: 180px;
+    height: 150px;
+}
+
+.header-description {
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    background: var(--gradient-primary); 
+    font-size: medium;
+}
+
+
+
+.step-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background-color: #ddd;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-btn.one{
+    background: var(--gradient-primary); 
+}
+.step-btn.active {
+    background: var(--gradient-primary); 
+}
+
+
+button.next {
+    position: sticky;
+    bottom: -55px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    background-color: #fefeff;
+    color: #666262;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; 
+    font-size: 1.1rem; 
+    min-width: 130px; 
+    max-width: 100%;
+    width: auto; 
+    text-align: center; 
+}
+
+
+button.next:active {
+    background-color: #e0e0e0;
+    border-color: #888; 
+}
+
+.next{
+    background-color: #fefeff;
+    width: 25%;
+    font-weight: bold;
+    color: #666262;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+button.next:hover {
+    background-color: #fefeff;
+    border: 1px solid black;
+    color: #666262;
+}
+
+
+@media (max-width: 768px) {
+    button.next {
+        bottom: -44px; 
+        padding: 8px 16px; 
+        font-size: 1rem; 
+    }
+
+    .complaint-section {
+        padding-bottom: 100px; 
+    }
+    .form-section{
+        padding-bottom: 100px; 
+    }
+}
+
+@media (max-width: 480px) {
+    button.next {
+        bottom: -41px; 
+        padding: 6px 14px; 
+        font-size: 0.9rem; 
+        min-width: 130px; 
+    }
+
+    .complaint-section {
+        padding-bottom: 120px;
+    }
+
+    .form-section {
+        padding-bottom: 120px;
+    }
+}
+
+.arrow {
+    font-size: 2rem;
+    line-height: 50px;
+    color: #333;
+    margin: 0 10px;
+}
+.arrow.one{
+    font-size: 2rem;
+    line-height: 50px;
+    color: black;
+    margin: 0 10px;
+}
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .arrow.one{
+        font-size: 2rem;
+        line-height: 40px;
+        color: black;
+        margin: 0 10px;
+    }
+}
+.arrow.two{
+    font-size: 2rem;
+    line-height: 50px;
+    color: rgb(182, 174, 174);
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .arrow.two{
+        font-size: 2rem;
+        line-height: 40px;
+        color: rgb(182, 174, 174);
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-control {
+        font-size: 1rem;
+    }
+    .text-primary {
+        font-size: 1.5rem;
+    }
+    .header h6 {
+        font-size: 1rem;
+    }
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    .card-body {
+        padding: 0;
+    }
+    .carousel-inner img {
+        height: 250px; 
+        object-fit: contain;
+    }
+    .step-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .arrow {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1208px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+    .carousel-inner img {
+        height: 100%; 
+        object-fit: contain;
+    }
+}
+.tertury{
+    color: var(--primary-color);
+}
+.footer {
+    background: #1c92d2; /* Fallback color */
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/Edge, Firefox, Chrome, Opera, Safari */
+    color: white;
+    height: auto;
+    padding: 10px 0; /* Minimal padding for small height */
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 20px; /* Larger icon size for better visibility */
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffc107; /* Hover effect on social icons */
+}
+
+.copyright p {
+    margin: 0; /* Remove extra margin */
+    font-size: 14px; /* Small font for copyright */
+}
+
+@media (max-width: 768px) {
+    .social-icons a {
+        font-size: 18px; /* Adjust icon size for smaller screens */
+    }
+    .copyright p {
+        font-size: 12px; /* Smaller font size on mobile */
+    }
+}
+.language-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between labels */
+    padding: 5px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    border: 2px solid transparent; /* Default no border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Hide the radio buttons */
+.language-selection input[type="radio"] {
+    display: none; 
+}
+
+/* Style for unchecked radio buttons */
+.language-selection input[type="radio"] + .language-label {
+    padding: 10px 20px; /* More padding for a better look */
+    border: 2px solid transparent; /* No border when unchecked */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background for all labels */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+/* Change border color of the entire selection on checked */
+.language-selection input[type="radio"]:checked + .language-label {
+    color: #007bff; /* Text color for checked state */
+    font-weight: bold; /* Bold text for checked state */
+}
+
+/* Change border color when checked */
+.language-selection input[type="radio"]:checked {
+    outline: none; /* Remove default outline for checked radio */
+}
+
+/* Change the border color of the container when checked */
+.language-selection input[type="radio"]:checked + .language-label {
+    border-color: #007bff; /* Border color for checked state */
+}
+
+/* Change background and text color on hover */
+.language-selection label:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+
+/* Ensure the border color changes on hover */
+.language-selection label:hover {
+    border-color: #007bff; /* Change border color on hover */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Add shadow on hover */
+}
+
+
+@media (max-width: 576px) {
+    .responsive-labels > div {
+        flex: 0 0 50%; /* Each column takes up half the row */
+        max-width: 50%; /* Set max width to half for small screens */
+    }
+
+    .responsive-labels {
+        margin-left: 0; /* Remove margin for better alignment */
+        margin-right: 0; /* Remove margin for better alignment */
+    }
+}
+
+
+.home-button {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+@media (max-width: 576px) {
+    .home-button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
+
+
+.whatsapp-icon {
+    font-size: 24px;
+    color: #25D366; /* WhatsApp green color */
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+
+.form-check-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f1dbdb;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.whatsapp-icon {
+    font-size: 24px;
+    color: #25D366;
+    margin-right: 10px;
+}
+
+.form-checkbox-input {
+    margin-right: 10px;
+    transform: scale(1.2); /* Slightly larger checkbox */
+}
+
+.form-checkbox-label {
+    font-size: 18px;
+    color: #333;
+}
+

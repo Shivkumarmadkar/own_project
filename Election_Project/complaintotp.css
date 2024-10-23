@@ -1,0 +1,62 @@
+#complaintotpForm {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+   
+    color: var(--secondary-color); 
+    
+}
+
+.checkbox-label {
+    margin-left: 5px; 
+}
+.form-group label {
+    font-weight: bold; 
+}
+.form-checkbox-input:checked {
+    background-color: green; 
+    border-color: green; 
+}
+
+
+.step-btn.lastone{
+    background-color: #060733;
+}
+.arrow.lastfirst{
+    font-size: 2rem;
+    line-height: 50px;
+    color: #201588;
+    margin: 0 10px;
+}
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .arrow.lastfirst {
+        font-size: 1.5rem; /* Change the font size for smaller screens */
+        color: #201588; /* Keep the color same or change it */
+       line-height: 40px;
+        margin: 0 5px; /* Adjust the margin */
+    }
+}
+.step-btn.lasttwo{
+    background-color: #060733;
+}
+.arrow.lastsecond{
+    font-size: 2rem;
+    line-height: 50px;
+    color: #201588;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .arrow.lastsecond {
+        font-size: 1.5rem; /* Change the font size for smaller screens */
+        color: #201588; /* Keep the color same or change it */
+       line-height: 40px;
+        margin: 0 5px; /* Adjust the margin */
+    }
+}
+
+    .checkmark-icon {
+        font-size: 4rem;  
+        color: #53d57b; 
+    }
+
